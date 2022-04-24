@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Expire Date | Hridoy Saha</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+</head>
+<body>
+
+    <div class="menubar" id="menuBar">
+        <span><i class="fas fa-bars"></i></span>
+    </div>
+    <div class="side__menu" id="side-menu">
+        <span class="cancle" id="cancle"><i class="fas fa-times"></i></span>
+        <div class="dates">
+            <ul>
+                <li id="week"><span>7</span> Days expire</li>
+                <li id="month"><span>31</span> Days expire</li>
+                <li id="year"><span>1</span> Year expire</li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="top__header">
+        <div class="container">
+            <div class="wrapper">
+                <div class="shwapno__logo">
+                    <img src="./img/shwapno-logo.jpg" alt="Shwapno Logo">
+                </div>
+                <div class="credit">
+                    <h3>Developed <span>by</span></h3>
+                    <h4>Hridoy Saha</h4>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="sheet__box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Expire Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="display-pd">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="add__btn" id="addBtn">
+            <span>+</span>
+        </div>
+        <div class="popup__page" id="popUp">
+            <span class="times__icon" id="times-icon">&times;</span>
+            <form action="#" id="pd-form">
+                <input type="text" placeholder="Description" id="desc">
+                <span class="invalid__feedback">Product name must be 3 to 40 character</span>
+                <input type="date" placeholder="Insert Date" id="date">
+                <span class="invalid__feedback">Please enter expire date</span>
+                <input type="submit" value="Add" class="submit__btn">
+            </form>
+        </div>
+    </main>
+    
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
